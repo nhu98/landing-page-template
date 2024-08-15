@@ -1,16 +1,26 @@
 import React from 'react';
+import Image from 'next/image';
+import banner from 'src/app/assets/images/banner.png';
+import robot from 'src/app/assets/images/robot-person.png';
+
 
 const Banner = () => {
-  return (<section className="relative h-[809px] bg-cover bg-center"
-                   style={{ backgroundImage: 'url(src/app/assets/images/banner.png)' }}>
-    <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
-      <div className="mb-4">
-        <span className="block text-sm font-medium text-blue-400">Artificial People Intelligence</span>
-        <h1 className="text-4xl font-bold">API SOFTWARE</h1>
-        <p className="mt-2 text-lg">Building solutions and projects for your business</p>
+  return (<section className=" relative h-[809px]">
+    <Image src={banner} fill alt={'banner'} className="object-cover" />
+    <div className="absolute inset-0 flex flex-col items-center  text-center justify-between pt-[120px]">
+      <div className="mb-4 flex flex-col">
+          <span className="text-sm font-medium text-blue-400 flex-grow text-left">
+            Artificial People Intelligence
+          </span>
+        <h1 className="text-7xl font-bold text-blue-600 mx-auto">
+          API SOFTWARE
+        </h1>
+        <p className="text-[16px] flex-grow text-right">
+          Building solutions and projects for your business
+        </p>
       </div>
       <div className="flex justify-center">
-        <img src="/images/your-image.png" alt="AI and Human" className="max-w-full h-auto" />
+        <Image src={robot} alt="AI and Human" className="max-w-full h-auto" />
       </div>
     </div>
   </section>);

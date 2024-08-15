@@ -1,4 +1,5 @@
 import styles from './page.module.scss';
+import Banner from './components/banner';
 
 export default function Index() {
   /*
@@ -8,15 +9,16 @@ export default function Index() {
    */
   return (<div className={styles.page}>
     <div className="wrapper">
-      <div className="container">
-        <div id="welcome">
-          <h1>
-            <span> Hello there, </span>
-            Welcome api-software 👋
-          </h1>
-        </div>
+      <Banner />
+      {/*<div className="container">*/}
+      {/*  <div id="welcome">*/}
+      {/*    <h1>*/}
+      {/*      <span> Hello there, </span>*/}
+      {/*      Welcome api-software 👋*/}
+      {/*    </h1>*/}
+      {/*  </div>*/}
 
-      </div>
+      {/*</div>*/}
     </div>
   </div>);
 }
