@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (<html lang="vi">
-  <body>
+  <body className="max-w-[1440px]">
   <Header />
   {children}
   <Footer />
