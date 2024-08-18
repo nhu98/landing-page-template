@@ -16,23 +16,24 @@ const Fields = () => {
     title: 'Location Tracking: Logistics, Car Booking', image: '/images/field-eight.png'
   }, { title: 'Booking: Home, Car, Plane, Travel, Service', image: '/images/field-nine.png' }];
 
-  return (<section className="py-[100px] px-[120px] bg-white">
-    <div className="text-center mb-12">
-      <h2 className="text-3xl font-bold text-gray-900 mb-4">
+  return (<section id="fields" className="py-[65px] px-[16px] md:py-[100px] md:px-[120px] bg-white font-inter">
+    <div className="text-center mb-6 md:mb-8">
+      <h2 className="text-xl font-bold mb-6 md:text-3xl md:mb-8">
         Một số lĩnh vực thế mạnh của chúng tôi
       </h2>
-      <p className="text-gray-600">
+      <p className="text-base font-normal text-[rgba(54,54,54,1)]">
         Và còn hơn thế nữa, những dự án của bạn và chúng tôi, chỉ cần liên hệ với chúng tôi.<br />
         Hoặc bạn cần sự bảo mật và tiện lợi, nhân viên của chúng tôi sẽ làm việc tại công ty của các bạn.
       </p>
     </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-8">
       {items.map((item, index) => (<div key={index} className="relative overflow-hidden rounded-lg shadow-md group">
-        <Image src={item.image} alt={item.title} layout="responsive" width={378} height={269} />
+        <Image src={item.image} alt={item.title} width={378} height={269}
+               className="w-[165px] h-[214px] md:w-[378px] md:h-[269px]" />
         <div
           className="absolute inset-0 flex justify-center items-end">
-          <h3 className="text-white text-[16px] font-bold text-center">{item.title}</h3>
+          <h3 className="text-white text-base font-bold text-center">{item.title}</h3>
         </div>
       </div>))}
     </div>

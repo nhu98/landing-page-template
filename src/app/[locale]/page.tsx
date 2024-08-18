@@ -1,4 +1,4 @@
-import styles from './page.module.scss';
+import styles from '../page.module.scss';
 import Banner from './components/banner';
 import AboutUs from './components/about-us';
 import TrustedLogos from './components/trusted-logos';
