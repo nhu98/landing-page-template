@@ -22,7 +22,7 @@ const inter = Inter({
 export async function generateMetadata(): Promise<Metadata> {
 
   return {
-    title: 'API Software Outsourcing | Artificial People Intelligence',
+    title: 'API Software Outsourcing',
     description: 'Cung cấp dịch vụ phát triển phần mềm outsource và AI. Kết hợp AI và con người để tạo ra các giải pháp phần mềm hiệu quả và chất lượng.',
     openGraph: {
       title: 'API Software Outsourcing',
