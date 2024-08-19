@@ -4,6 +4,7 @@ import Footer from './components/footer';
 import { Inter } from 'next/font/google';
 import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
+import type { Metadata, ResolvingMetadata } from 'next';
 
 // Can be imported from a shared config
 const locales = ['vi', 'en'];
@@ -17,10 +18,28 @@ const inter = Inter({
   subsets: ['latin'], variable: '--font-inter'
 });
 
-export const metadata = {
-  title: 'API Software Outsourcing | Artificial People Intelligence',
-  description: 'Cung cấp dịch vụ phát triển phần mềm outsource và AI. Kết hợp AI và con người để tạo ra các giải pháp phần mềm hiệu quả và chất lượng.'
-};
+type Props = {
+  params: { id: string }
+}
+
+export async function generateMetadata({}: Props, parent: ResolvingMetadata): Promise<Metadata> {
+  // optionally access and extend (rather than replace) parent metadata
+  const previousImages = (await parent).openGraph?.images || [];
+
+  return {
+    title: 'API Software Outsourcing | Artificial People Intelligence',
+    description: 'Cung cấp dịch vụ phát triển phần mềm outsource và AI. Kết hợp AI và con người để tạo ra các giải pháp phần mềm hiệu quả và chất lượng.',
+    openGraph: {
+      title: 'API Software Outsourcing | Artificial People Intelligence',
+      description: 'Cung cấp dịch vụ phát triển phần mềm outsource và AI. Kết hợp AI và con người để tạo ra các giải pháp phần mềm hiệu quả và chất lượng.',
+      type: 'website',
+      images: ['https://github.com/nhu98/api-software/blob/main/public/images/logo-meta.png?raw=true', ...previousImages]
+    },
+    alternates: {
+      canonical: 'https://apisoftware.net/phat-trien-phan-mem-outsource-ai'
+    }
+  };
+}
 
 export default async function LocaleLayout({
                                              children, params: { locale }
