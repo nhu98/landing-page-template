@@ -23,7 +23,7 @@ export default function Index() {
   }, []);
 
   return (<div className={styles.page}>
-    <div className="wrapper">
+    <div className="wrapper overflow-x-hidden">
       <Banner />
       <AboutUs />
       <TrustedLogos />
