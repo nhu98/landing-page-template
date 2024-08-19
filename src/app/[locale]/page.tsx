@@ -1,3 +1,4 @@
+'use client';
 import styles from '../page.module.scss';
 import Banner from './components/banner';
 import AboutUs from './components/about-us';
@@ -7,6 +8,9 @@ import UsCombineAi from './components/us-combine-ai';
 import Fields from './components/fields';
 import EmailSubmit from './components/email-submit';
 import Address from './components/address';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export default function Index() {
   /*
@@ -14,6 +18,10 @@ export default function Index() {
    *
    * Note: The corresponding styles are in the ./index.scss file.
    */
+  useEffect(() => {
+    AOS.init({});
+  }, []);
+
   return (<div className={styles.page}>
     <div className="wrapper">
       <Banner />
