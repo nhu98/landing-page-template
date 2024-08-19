@@ -4,7 +4,7 @@ import Footer from './components/footer';
 import { Inter } from 'next/font/google';
 import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
-import type { Metadata, ResolvingMetadata } from 'next';
+import type { Metadata } from 'next';
 
 // Can be imported from a shared config
 const locales = ['vi', 'en'];
@@ -18,13 +18,8 @@ const inter = Inter({
   subsets: ['latin'], variable: '--font-inter'
 });
 
-type Props = {
-  params: { id: string }
-}
 
-export async function generateMetadata({}: Props, parent: ResolvingMetadata): Promise<Metadata> {
-  // optionally access and extend (rather than replace) parent metadata
-  const previousImages = (await parent).openGraph?.images || [];
+export async function generateMetadata(): Promise<Metadata> {
 
   return {
     title: 'API Software Outsourcing | Artificial People Intelligence',
@@ -33,7 +28,7 @@ export async function generateMetadata({}: Props, parent: ResolvingMetadata): Pr
       title: 'API Software Outsourcing | Artificial People Intelligence',
       description: 'Cung cấp dịch vụ phát triển phần mềm outsource và AI. Kết hợp AI và con người để tạo ra các giải pháp phần mềm hiệu quả và chất lượng.',
       type: 'website',
-      images: ['https://github.com/nhu98/api-software/blob/main/public/images/logo-meta.png?raw=true', ...previousImages]
+      images: ['https://github.com/nhu98/api-software/blob/main/public/images/logo-meta.png?raw=true']
     },
     alternates: {
       canonical: 'https://apisoftware.net/phat-trien-phan-mem-outsource-ai'
