@@ -53,7 +53,7 @@ const Header = () => {
   };
 
   return (<header
-    className="max-w-[1440px] mx-auto px-[16px] py-[8px] md:px-[40px] md:py-[16px] flex justify-between items-center font-inter sticky top-0 left-0 right-0 bg-white z-50">
+    className=" mx-auto px-[16px] py-[8px] md:px-[40px] md:py-[16px] flex justify-between items-center font-inter sticky top-0 left-0 right-0 bg-white z-50">
     {/* Logo Section */}
     <div className="flex items-center gap-[10px]">
       <Image priority src="/images/logo.png" width={48} height={48} className="w-12 h-12"

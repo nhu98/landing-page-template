@@ -33,7 +33,7 @@ const Banner = () => {
         </div>
         <div className="flex justify-center">
           <Image src="/images/robot-person.png" priority width={719} height={479} alt="AI and Human"
-                 className="max-w-full h-auto" />
+                 className="w-[632px] h-[241px] md:w-[719px] md:h-[479px]" />
         </div>
       </div>
 
