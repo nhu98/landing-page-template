@@ -23,12 +23,12 @@
     "integration": "Integration: Call Center, Video Call, Chatbot, ...",
     "biometrics": "Biometrics: Face, Voice, Finger, ...",
     "locationTracking": "Location Tracking: Logistics, Car Booking, ...",
-    "ecommerce": "B2B, B2C, ...",
+    "ecommerce": "Ecommerce: B2B, B2C, ...",
     "booking": "Booking: Home, Car, Plane, Travel, Service, ...",
     "webThree": "Web3: Mini Game, Trading, ...",
     "needSecurity": "Hoặc bạn cần sự bảo mật và tiện lợi, nhân viên của chúng tôi sẽ làm việc tại công ty của các bạn",
     "investment": "Chúng tôi cũng rất hoan nghênh sự đầu tư của các bạn",
-    "letsGetStarted": "Hãy Thành Công",
+    "letsGetStarted": "Thành Công",
     "together": "Cùng Nhau",
     "apiSoftware": "API SOFTWARE",
     "addressTitle": "Địa chỉ",
@@ -39,6 +39,7 @@
     "email": "info@apisoftware.net",
     "websiteTitle": "Website",
     "website": "apisoftware.net",
-    "copyright": "© 2024 apisoftware. , All rights reserved"
+    "copyright": "© 2024 apisoftware. , All rights reserved",
+    "welcomeInvestment": "We also welcome your investment, Together for Success"
   }
 }

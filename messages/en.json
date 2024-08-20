@@ -23,22 +23,23 @@
     "integration": "Integration: Call Center, Video Call, Chatbot, ...",
     "biometrics": "Biometrics: Face, Voice, Finger, ...",
     "locationTracking": "Location Tracking: Logistics, Car Booking, ...",
-    "ecommerce": "B2B, B2C, ...",
+    "ecommerce": "Ecommerce: B2B, B2C, ...",
     "booking": "Booking: Home, Car, Plane, Travel, Service, ...",
     "webThree": "Web3: Mini Game, Trading, ...",
     "needSecurity": "Or you need security and convenience, our staff will work at your company",
     "investment": "We also welcome your investment",
-    "letsGetStarted": "Let's Succeed",
+    "letsGetStarted": "for Success",
     "together": "Together",
     "apiSoftware": "API SOFTWARE",
     "addressTitle": "Address",
     "address": "197 Cong Hoa, Ward 13, Tan Binh District, Ho Chi Minh City",
     "phoneTitle": "Phone",
-    "phone": "08 4310 4510",
+    "phone": "+848 4310 4510",
     "emailTitle": "Email",
     "email": "info@apisoftware.net",
     "websiteTitle": "Website",
     "website": "apisoftware.net",
-    "copyright": "© 2024 apisoftware. , All rights reserved"
+    "copyright": "© 2024 apisoftware. , All rights reserved",
+    "welcomeInvestment": "We also welcome your investment, Together for Success"
   }
 }

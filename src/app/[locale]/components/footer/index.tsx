@@ -9,8 +9,8 @@ const Footer = () => {
       className="flex flex-col items-center justify-between px-[16px] py-[24px] md:flex-row md:px-[100px] md:py-[100px] font-inter">
       {/* Left Section: Text */}
       <div className="text-3xl md:text-6xl font-black text-blue-600 mb-10 md:mb-0">
-        <p>{t('letsGetStarted')}</p>
         <p>{t('together')}</p>
+        <p>{t('letsGetStarted')}</p>
       </div>
 
       {/* Right Section: Contact Info */}

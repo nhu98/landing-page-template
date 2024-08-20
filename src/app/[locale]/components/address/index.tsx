@@ -51,11 +51,20 @@ const Address = () => {
           <TextGenerateEffect
             className="text-base font-medium dark:text-[rgba(255,255,255,1)] text-[rgba(255,255,255,1)]"
             marginClass=" mb-4"
+            duration={2}
             words={t('titleDescription')} />
           <TextGenerateEffect className="text-base font-medium dark:text-[rgba(26,255,91,1)] text-[rgba(26,255,91,1)]"
-                              words={`*/${t('addressTitle')}: ${t('address')}/*`} />
+                              duration={3}
+                              words={`${t('addressTitle')}: ${t('address')}`} />
           <TextGenerateEffect className="text-base font-medium dark:text-[rgba(26,255,91,1)] text-[rgba(26,255,91,1)]"
-                              words={`*/${t('emailTitle')}: ${t('email')} | ${t('phoneTitle')}: +848 4310 4510/*`} />
+                              duration={4}
+                              words={`${t('phoneTitle')}: ${t('phone')}`} />
+          <TextGenerateEffect className="text-base font-medium dark:text-[rgba(26,255,91,1)] text-[rgba(26,255,91,1)]"
+                              duration={5}
+                              words={`${t('emailTitle')}: ${t('email')}`} />
+          <TextGenerateEffect className="text-base font-medium dark:text-[rgba(26,255,91,1)] text-[rgba(26,255,91,1)]"
+                              duration={6}
+                              words={`${t('websiteTitle')}: ${t('website')}`} />
 
 
         </>)}

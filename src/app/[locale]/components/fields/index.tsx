@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import BlurFade from '../../../../components/magicui/blur-fade';
 import { useTranslations } from 'next-intl';
+import ArrowRightUp from '../icons/arrow-right-up';
+import { Button } from '../../../../components/ui/button';
 
 const Fields = () => {
   const t = useTranslations('HomePage');
@@ -28,6 +30,13 @@ const Fields = () => {
       <p className="text-base font-normal text-[rgba(54,54,54,1)]">
         {t('someOfOurStrengthsDescription')}
       </p>
+      <p className="text-base font-normal text-[rgba(54,54,54,1)]">
+        {t('needSecurity')}
+      </p>
+      <Button
+        className="text-base font-semibold bg-[rgba(7,103,273,1)] text-white px-[16px] py-[14px] rounded-lg hover:bg-blue-700 transition duration-300 mt-6 md:mt-8"
+        onClick={() => document.getElementById('address')?.scrollIntoView({ behavior: 'smooth' })}>{t('contactUs')}
+        <ArrowRightUp stroke="#FFFFFF" className="ml-1" /></Button>
     </div>
 
     <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-8">

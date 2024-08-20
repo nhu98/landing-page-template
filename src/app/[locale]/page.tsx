@@ -2,7 +2,6 @@
 import styles from '../page.module.scss';
 import Banner from './components/banner';
 import AboutUs from './components/about-us';
-import TrustedLogos from './components/trusted-logos';
 import IntroduceAI from './components/introduce-ai';
 import UsCombineAi from './components/us-combine-ai';
 import Fields from './components/fields';
@@ -26,7 +25,7 @@ export default function Index() {
     <div className="wrapper overflow-x-hidden">
       <Banner />
       <AboutUs />
-      <TrustedLogos />
+      {/*<TrustedLogos />*/}
       <IntroduceAI />
       <UsCombineAi />
       <Fields />
