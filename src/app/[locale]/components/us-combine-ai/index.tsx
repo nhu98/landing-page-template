@@ -8,7 +8,7 @@ const UsCombineAi = () => {
   const t = useTranslations('HomePage');
 
   return (<section
-    className="flex flex-col-reverse py-[56px] px-[16px] md:flex-row md:py-[100px] md:px-[120px] items-center justify-between bg-white font-inter">
+    className="flex flex-col-reverse px-[16px] md:flex-row items-center justify-between bg-white font-inter max-w-[1200px] mx-auto">
     <div data-aos="fade-right" className="flex justify-center items-center mb-8 md:w-1/2 md:mb-0 md:mr-[100px]">
       <Image priority src="/images/combine-ai.png" width={587} height={750} alt={'introduce-ai'} />
     </div>

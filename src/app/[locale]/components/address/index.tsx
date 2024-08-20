@@ -1,31 +1,65 @@
-import React from 'react';
+'use client';
+import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { TextGenerateEffect } from '../../../../components/ui/text-generate-effect';
 
 const Address = () => {
   const t = useTranslations('HomePage');
 
+  const [isVisible, setIsVisible] = useState(false);
+  const h2Ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+        observer.unobserve(entry.target);
+      }
+    }, { threshold: 0.1 });
+
+    if (h2Ref.current) {
+      observer.observe(h2Ref.current);
+    }
+
+    return () => {
+      if (h2Ref.current) {
+        observer.unobserve(h2Ref.current);
+      }
+    };
+  }, []);
+
 
   return (<section id="address"
-                   className="relative bg-white h-[708px] py-[56px] px-[16px] md:py-[100px] md:px-[120px] font-inter">
+                   className="relative py-[32px] px-[16px] md:px-[60px] bg-white font-inter max-w-[1200px] mx-auto">
+
     <Image
       priority
       src="/images/address-bg.png"
       alt="Address Background"
-      fill
-      className="object-fill md:object-contain"
+      width={1200}
+      height={447}
+      className="object-fill h-[596px] md:h-[447px] md:object-contain"
     />
+
     <div
-      className="absolute inset-0 flex flex-col md:flex-row items-center justify-between py-[100px] px-[30px] md:py-[100px] md:px-[120px]">
-      <div>
-        <h2 className="text-2xl font-bold text-white mb-2">{`{${t('apiSoftware')}}`}</h2>
-        <p className="text-base font-medium text-[rgba(255,255,255,1)] mb-4">{t('titleDescription')}</p>
-        <p className="text-base font-medium text-[rgba(26,255,91,1)]">
-          {`*/${t('addressTitle')}: ${t('address')}/*`}
-        </p>
-        <p className="text-base font-medium text-[rgba(26,255,91,1)]">
-          {`*/${t('emailTitle')}: ${t('email')} | ${t('phoneTitle')}: +848 4310 4510/*`}
-        </p>
+      className="absolute inset-0 left-[16px] right-[16px] flex flex-col md:flex-row items-center justify-between py-[100px] px-[30px] md:py-[100px] md:px-[120px]">
+      <div ref={h2Ref}>
+        {/*<h2 ref={h2Ref} className="text-2xl font-bold text-white mb-2">*/}
+        {isVisible && (<>
+          <TextGenerateEffect className="text-2xl font-bold" marginClass=" mb-2" words={`{${t('apiSoftware')}}`} />
+          <TextGenerateEffect
+            className="text-base font-medium dark:text-[rgba(255,255,255,1)] text-[rgba(255,255,255,1)]"
+            marginClass=" mb-4"
+            words={t('titleDescription')} />
+          <TextGenerateEffect className="text-base font-medium dark:text-[rgba(26,255,91,1)] text-[rgba(26,255,91,1)]"
+                              words={`*/${t('addressTitle')}: ${t('address')}/*`} />
+          <TextGenerateEffect className="text-base font-medium dark:text-[rgba(26,255,91,1)] text-[rgba(26,255,91,1)]"
+                              words={`*/${t('emailTitle')}: ${t('email')} | ${t('phoneTitle')}: +848 4310 4510/*`} />
+
+
+        </>)}
+        {/*</h2>*/}
       </div>
       <div>
         <Image
@@ -38,6 +72,7 @@ const Address = () => {
         />
       </div>
     </div>
+
   </section>);
 };
 

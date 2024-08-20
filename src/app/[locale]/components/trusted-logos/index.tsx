@@ -37,8 +37,8 @@ const TrustedLogos = () => {
 
   const logosRow = logos.slice(0, logos.length / 2);
 
-  return (<section className="py-[56px] px-[16px] md:py-[60px] bg-gray-100 font-inter">
-    <div className="max-w-6xl mx-auto flex items-center space-x-6 md:space-x-32 overflow-hidden">
+  return (<section className="py-[32px] px-[16px] md:py-[60px] bg-gray-100 font-inter">
+    <div className="max-w-[1200px] mx-auto flex items-center space-x-6 md:space-x-32 overflow-hidden">
       <span className="text-base font-bold whitespace-nowrap">Trusted By</span>
       <div className="flex flex-nowrap items-center">
         <Marquee pauseOnHover className="[--duration:20s] [--gap:2.5rem]">
