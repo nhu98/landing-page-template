@@ -76,6 +76,9 @@ const Header = () => {
       <Button variant="ghost" className={activeSection === 'mission' ? `relative h-full text-[16px] p-[16px] rounded-lg font-medium text-black bg-gradient-to-b from-transparent to-[rgba(100,141,255,0.1)]
   after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-[40%] after:h-[4px] after:bg-[#5F87FF] after:rounded-full after:rounded-b-none` : 'h-full text-[16px] p-[16px] rounded-lg'}
               onClick={() => document.getElementById('mission')?.scrollIntoView({ behavior: 'smooth' })}>{t('mission')}</Button>
+      <Button variant="ghost" className={activeSection === 'howToDo' ? `relative h-full text-[16px] p-[16px] rounded-lg font-medium text-black bg-gradient-to-b from-transparent to-[rgba(100,141,255,0.1)]
+  after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-[40%] after:h-[4px] after:bg-[#5F87FF] after:rounded-full after:rounded-b-none` : 'h-full text-[16px] p-[16px] rounded-lg'}
+              onClick={() => document.getElementById('howToDo')?.scrollIntoView({ behavior: 'smooth' })}>{t('howToDo')}</Button>
       <Button variant="ghost" className={activeSection === 'fields' ? `relative h-full text-[16px] p-[16px] rounded-lg font-medium text-black bg-gradient-to-b from-transparent to-[rgba(100,141,255,0.1)]
   after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-[40%] after:h-[4px] after:bg-[#5F87FF] after:rounded-full after:rounded-b-none` : 'h-full text-[16px] p-[16px] rounded-lg'}
               onClick={() => document.getElementById('fields')?.scrollIntoView({ behavior: 'smooth' })}>{t('field')}</Button>
@@ -100,6 +103,11 @@ const Header = () => {
                 toggleMenu();
                 document.getElementById('mission')?.scrollIntoView({ behavior: 'smooth' });
               }}>{t('mission')}</Button>
+      <Button variant="ghost" className="h-full text-[14px] p-[14px] rounded-lg"
+              onClick={() => {
+                toggleMenu();
+                document.getElementById('howToDo')?.scrollIntoView({ behavior: 'smooth' });
+              }}>{t('howToDo')}</Button>
       <Button variant="ghost" className="h-full text-[14px] p-[14px] rounded-lg"
               onClick={() => {
                 toggleMenu();
