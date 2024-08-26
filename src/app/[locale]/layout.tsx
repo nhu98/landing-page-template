@@ -47,14 +47,6 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (<html lang={locale}>
-
-  <head>
-    <script>
-      {`
-      alert("zxcv")
-      `}
-    </script>
-  </head>
   
   <body className={`${inter.variable}  `}>
   <NextIntlClientProvider messages={messages}>
@@ -62,6 +54,13 @@ export default async function LocaleLayout({
     {children}
     <Footer />
   </NextIntlClientProvider>
+
+    <script>
+      {`
+      alert("zxcv")
+      `}
+    </script>
+
   </body>
   </html>);
 }
