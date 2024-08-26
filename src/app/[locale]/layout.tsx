@@ -50,7 +50,9 @@ export default async function LocaleLayout({
 
   <head>
     <script>
+      {`
       alert("zxcv")
+      `}
     </script>
   </head>
   
