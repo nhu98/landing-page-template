@@ -5,7 +5,7 @@ import { Inter } from 'next/font/google';
 import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import type { Metadata } from 'next';
-import { useEffect } from 'react';
+//import { useEffect } from 'react';
 
 // Can be imported from a shared config
 const locales = ['vi', 'en'];
@@ -47,7 +47,7 @@ export default async function LocaleLayout({
   // side is the easiest way to get started
   const messages = await getMessages();
 
-  useEffect(() => {
+  React.useEffect(() => {
     // Re-execute the script whenever the locale changes
     const script = document.createElement('script');
     script.innerHTML = `
