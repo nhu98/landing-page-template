@@ -6,7 +6,7 @@ const UsCombineAi = () => {
   const t = useTranslations('HomePage');
 
   return (<section id="howToDo"
-    className="flex flex-col-reverse px-[16px] md:flex-row items-center justify-between bg-white font-inter max-w-[1200px] mx-auto">
+    className="flex flex-col-reverse px-[16px] md:flex-row items-center justify-between bg-white font-inter max-w-[1200px] mx-auto scroll-mt-[calc(80px)]">
     <div data-aos="fade-right" className="flex justify-center items-center mb-8 md:w-1/2 md:mb-0 md:mr-[100px]">
       <Image priority src="/images/combine-ai.png" width={587} height={750} alt={'introduce-ai'} />
     </div>

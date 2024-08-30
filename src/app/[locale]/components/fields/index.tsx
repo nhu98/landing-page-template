@@ -22,7 +22,7 @@ const Fields = () => {
     title: t('locationTracking'), image: '/images/field-eight.png'
   }, { title: t('booking'), image: '/images/field-nine.png' }];
 
-  return (<section id="fields" className="py-[32px] px-[16px] md:py-[80px] bg-white font-inter max-w-[1200px] mx-auto">
+  return (<section id="fields" className="py-[32px] px-[16px] md:py-[80px] bg-white font-inter max-w-[1200px] mx-auto scroll-mt-[calc(80px)]">
     <div className="text-center mb-6 md:mb-8">
       <h2 className="text-xl font-bold mb-6 md:text-3xl md:mb-8">
         {t('someOfOurStrengthsTitle')}

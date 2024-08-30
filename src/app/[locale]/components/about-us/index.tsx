@@ -10,7 +10,7 @@ const AboutUs = () => {
   const t = useTranslations('HomePage');
 
   return (
-    <section id="about-us" className="bg-white  py-[32px] px-[16px] md:py-[60px] max-w-[1200px] mx-auto font-inter">
+    <section id="about-us" className="bg-white  py-[32px] px-[16px] md:py-[60px] max-w-[1200px] mx-auto font-inter scroll-mt-[calc(50px)]">
       <div className="mx-auto text-center">
         <BlurFade delay={0.25} inView>
           <h2 className="text-xl mb-8 md:text-5xl md:mb-8 font-bold text-gray-900">{t('aboutUsTitle')}</h2>
