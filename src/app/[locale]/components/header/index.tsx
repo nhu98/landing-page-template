@@ -40,16 +40,13 @@ const Header = () => {
     };
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+  const handleChangeLanguage = () => {
+    const newLocale = locale === 'vi' ? 'en' : 'vi';
+    router.replace(newLocale);
   };
 
-  const handleChangeLanguage = () => {
-    if (locale === 'vi') {
-      router.replace('en');
-    } else {
-      router.replace('vi');
-    }
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (<header
