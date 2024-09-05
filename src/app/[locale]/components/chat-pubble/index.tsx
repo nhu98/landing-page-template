@@ -9,7 +9,7 @@ const LiveChat = () => {
   return (
     <LiveChatWidget
       license="18457389"
-      visibility="maximized"
+      visibility="minimized"
       onNewEvent={handleNewEvent}
     />
   );
