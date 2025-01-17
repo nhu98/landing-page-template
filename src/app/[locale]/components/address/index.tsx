@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { TextGenerateEffect } from '../../../../components/ui/text-generate-effect';
+import { TextGenerateEffect } from '../../../../components/magicui/text-generate-effect';
 
 const Address = () => {
   const t = useTranslations('HomePage');

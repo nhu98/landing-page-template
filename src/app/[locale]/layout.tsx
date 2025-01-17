@@ -29,7 +29,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: 'API Software Outsourcing',
       description: 'Cung cấp dịch vụ phát triển phần mềm outsource và AI. Kết hợp AI và con người để tạo ra các giải pháp phần mềm hiệu quả và chất lượng.',
       type: 'website',
-      images: ['https://github.com/trungnguyenite/public/blob/main/logo-meta.png?raw=true']
+      images: ['https://github.com/nhu98/api-software/blob/main/public/images/logo-meta.png?raw=true']
     },
     alternates: {
       canonical: 'https://apisoftware.net/'
