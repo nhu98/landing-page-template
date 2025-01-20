@@ -53,7 +53,7 @@ const Header = () => {
     className=" mx-auto px-[16px] py-[8px] md:px-[40px] md:py-[16px] flex justify-between items-center font-inter sticky top-0 left-0 right-0 bg-white z-50">
     {/* Logo Section */}
     <div className="flex items-center gap-[10px]">
-      <Image priority src="/images/logo.png" width={80} height={80} className="w-16 h-16 md:w-20 md:h-20"
+      <Image priority src="/images/logo.png" width={80} height={80} className="w-16 h-12 md:w-24 md:h-16"
              alt={'logo'} />
     </div>
 
