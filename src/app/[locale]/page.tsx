@@ -14,6 +14,8 @@ import ZaloIcon from './components/icons/zalo';
 import CallMeIcon from './components/icons/call-me';
 import {useTranslations} from 'next-intl';
 import {PulsatingButton} from '../../components/magicui/pulsating-btn';
+import GridSectionOne from './components/grid-section-one';
+// import TrustedLogos from './components/trusted-logos';
 
 export default function Index() {
   const t = useTranslations('HomePage');
@@ -44,6 +46,7 @@ export default function Index() {
         {/*<TrustedLogos />*/}
         <IntroduceAI />
         <UsCombineAi />
+        <GridSectionOne />
         <Fields />
         <EmailSubmit />
         {/*<Address />*/}
@@ -51,7 +54,7 @@ export default function Index() {
       {showScrollToTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-4 left-4 p-3 bg-white rounded-full shadow-lg hover:bg-blue-600 transition"
+          className="fixed bottom-4 left-4 rounded-full shadow-lg hover:bg-gray-300 transition"
           aria-label="Scroll to Top">
           <ArrowTopUp />
         </button>
@@ -60,7 +63,7 @@ export default function Index() {
       <div className="fixed bottom-10 right-28">
         <a
           href="tel:+84911910210"
-          className="rounded-full bg-black opacity-50 text-white p-3 hover:bg-blue-600  transition">
+          className="rounded-full bg-black opacity-50 text-white p-3 hover:bg-gray-500  transition">
           <span>{t('phone')}</span>
         </a>
       </div>
@@ -69,7 +72,7 @@ export default function Index() {
         <PulsatingButton>
           <a
             href="https://zalo.me/0911910210"
-            className="w-20 h-20 flex items-center justify content-center rounded-full bg-white p-3 hover:bg-blue-600  transition">
+            className="w-20 h-20 flex items-center justify content-center rounded-full bg-white p-3 hover:bg-gray-300  transition">
             <ZaloIcon />
           </a>
         </PulsatingButton>
@@ -77,7 +80,7 @@ export default function Index() {
         <PulsatingButton>
           <a
             href="tel:+84911910210"
-            className="w-20 h-20 flex items-center justify content-center rounded-full bg-white p-3 hover:bg-blue-600  transition">
+            className="w-20 h-20 flex items-center justify content-center rounded-full bg-white p-3 hover:bg-gray-300  transition">
             <CallMeIcon />
           </a>
         </PulsatingButton>

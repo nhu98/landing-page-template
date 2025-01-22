@@ -114,7 +114,7 @@ const EmailSubmit = () => {
       className="font-inter border-b-[2px] px-4 py-4 md:px-40 md:py-10 scroll-mt-[calc(150px)]">
       <div className="flex flex-col items-center text-center justify-center w-full">
         <div className="flex flex-col items-center justify-center w-full">
-          <div className="flex flex-col w-[343px] md:w-[779px]">
+          <div className="flex flex-col">
             <h2 className=" font-bold text-blue-600 mx-auto text-xl mb-6 md:text-5xl md:mb-8">
               {t('investment')}
             </h2>
