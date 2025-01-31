@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-// import { Button } from '../../../../components/ui/button';
 import BlurFade from '../../../../components/magicui/blur-fade';
 import {useTranslations} from 'next-intl';
+import Fireworks from '../framer-motion';
 
 const Banner = () => {
   const t = useTranslations('HomePage');
@@ -32,7 +32,7 @@ const Banner = () => {
             </h1>
             <div className="flex-grow text-right">
               <p className="text-[14px] w-[228px] md:text-[16px] md:w-[400px] font-semibold ml-auto">
-                {t('titleSub')}
+                {`${t('titleSub')} 🎆`}
               </p>
             </div>
           </div>
@@ -47,6 +47,7 @@ const Banner = () => {
             />
           </div>
         </div>
+        <Fireworks />
       </section>
     </BlurFade>
   );
