@@ -73,9 +73,7 @@ const FallingMai = () => {
       canvas.height = window.innerHeight;
     });
 
-    return () => {
-      window.removeEventListener('resize', () => {});
-    };
+    return;
   }, []);
 
   return (
