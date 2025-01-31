@@ -8,13 +8,14 @@ import Fields from './components/fields';
 import EmailSubmit from './components/email-submit';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import ArrowTopUp from './components/icons/arrow-top';
 import ZaloIcon from './components/icons/zalo';
 import CallMeIcon from './components/icons/call-me';
 import {useTranslations} from 'next-intl';
 import {PulsatingButton} from '../../components/magicui/pulsating-btn';
 import GridSectionOne from './components/grid-section-one';
+import FallingMai from './components/falling-mai';
 // import TrustedLogos from './components/trusted-logos';
 
 export default function Index() {
@@ -50,6 +51,7 @@ export default function Index() {
         <Fields />
         <EmailSubmit />
         {/*<Address />*/}
+        <FallingMai />
       </div>
       {showScrollToTop && (
         <button
