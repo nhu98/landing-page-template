@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["BB9WPA89HC.com.emdap.test"],
+        "components": [
+          {"/": "/boxes/*"},
+          {"/": "/*"}
+        ]
+      }
+    ]
+  }
+}
