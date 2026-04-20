@@ -59,7 +59,7 @@ const Footer = () => {
             <div className="">
               <p className="font-bold">{t('websiteTitle')}</p>
               <a
-                href="#"
+                href="testingtrout://boxes/2025-topps-series-1-baseball-hobby-box/storefront/mnsportscards"
                 className="font-medium text-[rgba(0,122,255,1)] underline">
                 {t('website')}
               </a>
